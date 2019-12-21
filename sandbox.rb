@@ -30,6 +30,7 @@ def nyc_pigeon_organizer(data)
 #      p key2, value2
     end #nested block
   end # block
+  new_array.uniq!
   p new_array
   return pigeon_list
 end
