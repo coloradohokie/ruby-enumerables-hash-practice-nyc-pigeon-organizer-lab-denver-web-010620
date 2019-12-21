@@ -23,7 +23,9 @@ def nyc_pigeon_organizer(data)
   data.each do |top_key,top_value| 
 #    p top_key, top_value
     top_value.each do |key2, value2|
-      value2.each {|name| p name}
+      value2.each do |name| 
+        
+      end
 #      p key2, value2
     end #nested block
   end # block
