@@ -32,11 +32,11 @@ def pigeon_names(data)
     end #nested block
   end # block
   new_array.uniq!
-  p new_array
+#  p new_array
   new_array.map do |name|
     pigeon_names[name] = {}
   end #map block
-    p pigeon_names
+#    p pigeon_names
   return pigeon_names
 end
 
