@@ -40,8 +40,8 @@ def pigeon_names(data)
   new_array.map do |name|
     pigeon_names[name] = {:color => [], :gender => [], :lives => []}
   end #map block
-    p pigeon_names
-    p attributes
+#    p pigeon_names
+#    p attributes
   
   pigeon_names.each do |name,value|
     value.each do |k,v| 
@@ -52,7 +52,7 @@ def pigeon_names(data)
       end #data[k] block
     end #value.each block
   end #pigeon_names.each block
-        
+  p pigeon_names      
  # end
   
   
