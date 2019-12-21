@@ -37,7 +37,7 @@ def pigeon_names(data)
     pigeon_names[name] = {}
   end #map block
 #    p pigeon_names
-  return new_array  #NOW RETURNING AN ARRAY
+  return pigeon_names
 end
 
 def add_attributes(birds)
