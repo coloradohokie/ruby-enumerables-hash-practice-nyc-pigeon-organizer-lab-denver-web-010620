@@ -23,12 +23,11 @@ def nyc_pigeon_organizer(data)
   data.each do |top_key,top_value| #block
 #    p top_key, top_value
     top_value.each do |key2, value2| #nested block
-      new_array = value2.uniq 
-        p new_array
+      new_array << value2.uniq 
 #      p key2, value2
     end #nested block
   end # block
-  
+  p new_array
   return pigeon_list
 end
 
