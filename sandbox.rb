@@ -45,7 +45,7 @@ def pigeon_names(data)
   
   pigeon_names.each do |name,value|
     value.each do |k,v| 
-      data[k].each do [subatt, name_list]
+      data[k].each do |subatt, name_list|
         if name_list.any?{|name| name}
           v << subatt
         end #if
