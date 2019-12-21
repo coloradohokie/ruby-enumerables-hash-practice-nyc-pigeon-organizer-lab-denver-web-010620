@@ -38,11 +38,15 @@ def pigeon_names(data)
   new_array.uniq!
 #  p new_array
   new_array.map do |name|
-    pigeon_names[name] = {:color => {}, :gender => {}, :lives => {}}
+    pigeon_names[name] = {:color => [] :gender => [], :lives => []}
   end #map block
     p pigeon_names
     p attributes
-
+  
+  pigeon_names.each do |k,v|
+    p k
+    p v
+  end
   
   
 
