@@ -40,5 +40,21 @@ def pigeon_names(data)
   return pigeon_names
 end
 
-pigeon_names(pigeon_data)
+def add_attributes(birds)
+  attributes = [:color, :gender, :lives]
+  attributes.each do |attribute_value|
+    birds.each do |bird_name|
+      bird_name[attribute_value] = []
+    end #birds.each block
+  end #attributes.each block
+  return birds
+end
 
+def nyc_pigeon_organizer(data)
+  pigeon_list = pigeon_names(data)
+  add_attributes(pigeon_list)
+end
+
+
+
+nyc_pigeon_organizer(pigeon_data)
