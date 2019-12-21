@@ -25,6 +25,11 @@ def pigeon_names(data)
   pigeon_names = {}
   new_array = []
   attributes = []
+  
+#this section of code pulls the list of names, removes the duplicates,
+#and populates the names in the top level hash
+# ex: pigeon_name1 => {:color => [], :gender=> [], :lives => [], pigeon_name2...}
+
   data.each do |top_key,top_value| #block
     attributes << top_key
     top_value.each do |key2, value2| #nested block
@@ -37,6 +42,11 @@ def pigeon_names(data)
   new_array.map do |name|
     pigeon_names[name] = {:color => [], :gender => [], :lives => []}
   end #map block
+
+
+
+#this section of code pulls the attributes out and assigns them
+#to the correct pigeon.
 
   pigeon_names.each do |name,value|
     value.each do |k,v|
@@ -52,29 +62,13 @@ def pigeon_names(data)
   pp pigeon_names      
  # end
   
-  
-
-
-
   return pigeon_names
 end
 
-def add_attributes(birds)
-  attributes = [:color, :gender, :lives]
-  birds.each do |bird_name|
-    p bird_name
-    attributes.each do |attribute_value|
-        p attribute_value
-#      bird_name[attribute_value] = []
-    end #attributes.each block
-  end #birds.each block
-  p birds
-  return birds
-end
+
 
 def nyc_pigeon_organizer(data)
   pigeon_list = pigeon_names(data)
-#  add_attributes(pigeon_list)
 end
 
 
