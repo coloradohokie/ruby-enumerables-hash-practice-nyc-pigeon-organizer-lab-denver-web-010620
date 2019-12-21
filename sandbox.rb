@@ -21,7 +21,7 @@ pigeon_data = {
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
   keys = data.each { |k,v| v }
-  p keys
+  p "keys: #{keys}""
   
   return pigeon_list
 end
