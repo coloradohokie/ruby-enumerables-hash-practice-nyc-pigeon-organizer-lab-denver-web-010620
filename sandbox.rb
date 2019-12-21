@@ -37,6 +37,11 @@ def pigeon_names(data)
     pigeon_names[name] = {}
   end #map block
 #    p pigeon_names
+
+  attributes = [:color, :gender, :lives]
+
+
+
   return pigeon_names
 end
 
