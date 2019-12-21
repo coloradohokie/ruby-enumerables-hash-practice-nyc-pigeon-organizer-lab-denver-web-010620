@@ -19,16 +19,16 @@ pigeon_data = {
 
 
 def pigeon_names(data)
-#this method accepts the nds and returns the list of unique pigeon names
+#this method accepts the nds and returns a hash of unique pigeon names
+#ex. "pigeon name" => {}
+
   pigeon_names = {}
   new_array = []
   data.each do |top_key,top_value| #block
-#    p top_key, top_value
     top_value.each do |key2, value2| #nested block
       value2.each do |value3|
         new_array << value3
     end
-#      p key2, value2
     end #nested block
   end # block
   new_array.uniq!
@@ -41,3 +41,4 @@ def pigeon_names(data)
 end
 
 pigeon_names(pigeon_data)
+
