@@ -25,6 +25,8 @@ def pigeon_names(data)
   pigeon_names = {}
   new_array = []
   data.each do |top_key,top_value| #block
+    p top_key
+    p top_value
     top_value.each do |key2, value2| #nested block
       value2.each do |value3|
         new_array << value3
