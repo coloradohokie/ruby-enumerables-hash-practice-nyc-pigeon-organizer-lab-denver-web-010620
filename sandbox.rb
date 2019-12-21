@@ -46,7 +46,7 @@ def add_attributes(birds)
     birds.each do |bird_name|
         p attribute_value
         p bird_name
-#      bird_name[attribute_value] = []
+      bird_name[attribute_value] = []
     end #birds.each block
   end #attributes.each block
   p birds
