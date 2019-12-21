@@ -20,6 +20,7 @@ pigeon_data = {
 
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
+  new_array = []
   data.each do |top_key,top_value| #block
 #    p top_key, top_value
     top_value.each do |key2, value2| #nested block
