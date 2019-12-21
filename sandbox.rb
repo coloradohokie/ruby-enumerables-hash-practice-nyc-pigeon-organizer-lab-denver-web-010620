@@ -39,4 +39,4 @@ def pigeon_names(data)
   return pigeon_names
 end
 
-nyc_pigeon_organizer(pigeon_data)
+pigeon_names(pigeon_data)
