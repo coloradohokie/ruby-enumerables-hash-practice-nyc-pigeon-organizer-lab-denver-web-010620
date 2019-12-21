@@ -35,7 +35,7 @@ def pigeon_names(data)
 #  p new_array
   new_array.map do |name|
     pigeon_names[name] = {}
-    
+    attributes = [:color, :gender, :lives]
   end #map block
     p pigeon_names
 
