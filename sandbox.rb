@@ -43,9 +43,13 @@ def pigeon_names(data)
     p pigeon_names
     p attributes
   
-  pigeon_names.each do |k,v|
-    p k
-    p v
+  pigeon_names.each do |name,value|
+    value.each do |k,v| 
+      data[k].each do [subatt, name_list]
+        name_list.any? == name
+          v << subatt
+          
+        
   end
   
   
