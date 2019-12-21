@@ -42,6 +42,7 @@ def pigeon_names(data)
     value.each do |k,v|
       p "name= #{name}, value = #{value} k = #{k}, v = #{v}"
       data[k].each do |subatt, name_list|
+        p "subatt = #{subatt}, name_list= #{name_list}"
         if name_list.any?{|name| name}
           v << subatt.to_s
         end #if
