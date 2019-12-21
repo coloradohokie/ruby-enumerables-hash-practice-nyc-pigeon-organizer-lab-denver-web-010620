@@ -26,8 +26,6 @@ def pigeon_names(data)
   new_array = []
   attributes = []
   data.each do |top_key,top_value| #block
-#    p top_key
-#    p top_value
     attributes << top_key
     top_value.each do |key2, value2| #nested block
       value2.each do |value3|
@@ -36,15 +34,13 @@ def pigeon_names(data)
     end #nested block
   end # block
   new_array.uniq!
-#  p new_array
   new_array.map do |name|
     pigeon_names[name] = {:color => [], :gender => [], :lives => []}
   end #map block
-#    p pigeon_names
-#    p attributes
-  
+
   pigeon_names.each do |name,value|
-    value.each do |k,v| 
+    value.each do |k,v|
+      p "name= #{name}, value = #{value} k = #{k}, v = #{v}"
       data[k].each do |subatt, name_list|
         if name_list.any?{|name| name}
           v << subatt.to_s
