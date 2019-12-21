@@ -47,6 +47,7 @@ def add_attributes(birds)
       bird_name[attribute_value] = []
     end #birds.each block
   end #attributes.each block
+  p birds
   return birds
 end
 
