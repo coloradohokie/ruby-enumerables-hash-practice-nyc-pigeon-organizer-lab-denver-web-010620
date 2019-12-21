@@ -1,17 +1,14 @@
 def nyc_pigeon_organizer(data)
   pigeon_names = {}
   new_array = []
-  attributes = []
-  
+
 #this section of code pulls the list of names, removes the duplicates,
 #and populates the names in the top level hash
 # ex: pigeon_name1 => {:color => [], :gender=> [], :lives => [], pigeon_name2...}
 
   data.each do |top_key,top_value| #block
     top_value.each do |key2, value2| #nested block
-      value2.each do |value3|
-        new_array << value3
-    end
+      value2.each {|value3| new_array << value3}
     end #nested block
   end # block
   new_array.uniq!
