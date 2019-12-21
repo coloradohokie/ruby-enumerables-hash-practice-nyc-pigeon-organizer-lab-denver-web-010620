@@ -18,8 +18,9 @@ pigeon_data = {
 }
 
 
-def nyc_pigeon_organizer(data)
-  pigeon_list = {}
+def pigeon_names(data)
+#this method accepts the nds and returns the list of unique pigeon names
+  pigeon_names = {}
   new_array = []
   data.each do |top_key,top_value| #block
 #    p top_key, top_value
@@ -32,7 +33,10 @@ def nyc_pigeon_organizer(data)
   end # block
   new_array.uniq!
   p new_array
-  return pigeon_list
+  new_array.map do |name|
+    pigeon_names[name] = {}
+    p pigeon_names
+  return pigeon_names
 end
 
 nyc_pigeon_organizer(pigeon_data)
